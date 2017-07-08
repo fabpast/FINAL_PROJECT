@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#main div {
+ float: left;
+ width: 25%;
+ height: 15em;
+ background-color: #bbb;
+ border: 1px solid black;
+}
+
+.logo {
+  height: 2em;
+  margin: 1.5em;
+}
