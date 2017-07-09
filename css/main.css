@@ -4,6 +4,13 @@
 
 body {
   margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+header {
+width: 1300px;
+margin: auto;
 }
 
 #main div {
@@ -11,10 +18,22 @@ body {
  width: 25%;
  height: 15em;
  background-color: #bbb;
- border: 1px solid black;
+ border: 1px solid grey;
 }
 
 .logo {
   height: 2em;
   margin: 1.5em;
+  float: left;
+}
+
+.tagline {
+  display: block;
+  float: left;
+  font-weight: 300;
+  margin-top: 1.9em;
+}
+
+.clear {
+  clear: left;
 }
