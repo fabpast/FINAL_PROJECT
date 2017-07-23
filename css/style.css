@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(100, 100, 100);
 }
 
 header {
@@ -41,19 +42,13 @@ header {
 #main {
   width: 100vw;
   margin: 0;
-  /*flex-grow: 1;*/
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: center;*/
-  /*flex-direction: column;*/
 }
 
 #main div {
 min-width: 25%;
- /*float: left;*/
- background-color: #bbb;
- /*border: 1px solid white;*/
-
+background-color: #bbb;
 }
 
 #main img {
@@ -87,12 +82,77 @@ background-color: #f40179;
 
 footer {
   height: 200px;
-  background-color: grey;
+  background-color: #ee3349;
+  color: white;
 }
 
 footer div {
   width: 960px;
   margin: auto;
+}
+footer span {
+  display: block;
+  font-size: 0.8em;
+  padding-top: 1em;
+  text-align: center;
+}
+
+#about_main {
+  width: 960px;
+  margin: auto;
+  padding: 0 130px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=text]{
+    width: 50%; /* Full width */
+  }
+
+textarea {
+    width: 100%; /* Full width */
+  }
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #ee3349;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #df293f;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 25px;
+    margin: 50px auto;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+#about_main ul {
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (min-width:880px) {
