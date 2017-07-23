@@ -39,27 +39,33 @@ header {
 }
 
 #main {
-  width: 100%;
-  margin: 0 auto;
+  width: 100vw;
+  margin: 0;
   /*flex-grow: 1;*/
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /*justify-content: center;*/
   /*flex-direction: column;*/
 }
 
 #main div {
+min-width: 25%;
  /*float: left;*/
- width: 15.625em;
- height: 11em;
  background-color: #bbb;
- border: 1px solid white;
+ /*border: 1px solid white;*/
 
 }
 
-#main div:hover {
+#main img {
+width: 100%;
+height:100%;
+}
+
+/*#main div:hover {
 background-color: #f40179;
-}
+}*/
+
+
 
 .logo {
   height: 2em;
@@ -87,4 +93,11 @@ footer {
 footer div {
   width: 960px;
   margin: auto;
+}
+
+@media screen and (min-width:880px) {
+  #main {
+
+  }
+
 }
