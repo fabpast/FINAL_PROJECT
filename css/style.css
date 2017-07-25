@@ -82,7 +82,7 @@ header {
   height: 100%;
 }
 
-.main .container .overlay .text {
+.main .container .overlay {
   min-width: 0%;
 }
 
@@ -120,6 +120,11 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  width: 200px;
+}
+
+.text p {
+  font-size: 0.8em;
 }
 
 /*THE MAIN SECTIONS ENDS HERE*/
