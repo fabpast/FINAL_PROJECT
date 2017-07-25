@@ -64,7 +64,6 @@ header {
 
 
 /*THE HEADER ENDS HERE*/
-
 /*THE MAIN CONTENT STARTS HERE*/
 
 .main {
@@ -123,20 +122,61 @@ header {
 }
 
 .text h2 {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
   margin: 0;
+  line-height: 1em;
 }
 
 .text p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 300;
-  text-align: center;
-  margin: 0.2em;
+  text-align: left;
+  margin: 0em;
 }
 /* END OF ANIMATION OVERLAY LEFT TO RIGHT*/
+/* ANIMATION OVERLAY RIGHT TO LEFT*/
 
+.main .container_rl .overlay_rl {
+  min-width: 0%;
+}
+
+.container_rl {
+  position: relative;
+}
+
+.overlay_rl {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #5321b9;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  min-width: 0%;
+}
+
+.container_rl:hover .overlay_rl {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 12.5em;
+}
+
+/* END OF ANIMATION OVERLAY RIGHT TO LEFT*/
 /* ANIMATION OVERLAY DOWN TO UP*/
 
 .main .container_du .overlay_du {
@@ -174,22 +214,7 @@ header {
   -ms-transform: translate(-50%, -50%);
   width: 12.5em;
 }
-
-.text h2 {
-  font-size: 1em;
-  font-weight: 600;
-  text-align: center;
-  margin: 0;
-}
-
-.text p {
-  font-size: 1.5em;
-  font-weight: 300;
-  text-align: center;
-  margin: 0.2em;
-}
 /* END OF ANIMATION OVERLAY DOWN TO UP*/
-
 /* ANIMATION OVERLAY UP TO DOWN*/
 
 .main .container_ud .overlay_ud {
@@ -228,22 +253,7 @@ header {
   -ms-transform: translate(-50%, -50%);
   width: 12.5em;
 }
-
-.text h2 {
-  font-size: 1em;
-  font-weight: 600;
-  text-align: center;
-  margin: 0;
-}
-
-.text p {
-  font-size: 1.5em;
-  font-weight: 300;
-  text-align: center;
-  margin: 0.2em;
-}
 /* END OF ANIMATION OVERLAY UP TO DOWN*/
-
 /*THE MAIN SECTIONS ENDS HERE*/
 
 /*THE FOOTER STARTS HERE*/
@@ -329,6 +339,10 @@ h2 {
   .text {
     width: 12.5em;
   }
+
+  .text h2 p {
+    margin-left: 1em;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -337,8 +351,12 @@ h2 {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   .main div {
     min-width: 100%;
+  }
+  .text h2 p {
+    font-size: 1em;
+    margin-left: 2em;
   }
 }
