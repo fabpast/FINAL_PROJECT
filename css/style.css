@@ -85,15 +85,15 @@ header {
 
 /* ANIMATION OVERLAY LEFT TO RIGHT*/
 
-.main .container .overlay {
+.main .container_lr .overlay_lr {
   min-width: 0%;
 }
 
-.container {
+.container_lr {
   position: relative;
 }
 
-.overlay {
+.overlay_lr {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -106,7 +106,7 @@ header {
   min-width: 0%;
 }
 
-.container:hover .overlay {
+.container_lr:hover .overlay_lr {
   width: 100%;
 }
 
@@ -137,7 +137,112 @@ header {
 }
 /* END OF ANIMATION OVERLAY LEFT TO RIGHT*/
 
+/* ANIMATION OVERLAY DOWN TO UP*/
 
+.main .container_du .overlay_du {
+  min-width: 0%;
+}
+
+.container_du {
+  position: relative;
+}
+
+.overlay_du {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ff8400;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container_du:hover .overlay_du {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 12.5em;
+}
+
+.text h2 {
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.text p {
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+  margin: 0.2em;
+}
+/* END OF ANIMATION OVERLAY DOWN TO UP*/
+
+/* ANIMATION OVERLAY UP TO DOWN*/
+
+.main .container_ud .overlay_ud {
+  min-width: 0%;
+}
+
+.container_ud {
+  position: relative;
+}
+
+.overlay_ud {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ee3349;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container_ud:hover .overlay_ud {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 12.5em;
+}
+
+.text h2 {
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.text p {
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+  margin: 0.2em;
+}
+/* END OF ANIMATION OVERLAY UP TO DOWN*/
 
 /*THE MAIN SECTIONS ENDS HERE*/
 
