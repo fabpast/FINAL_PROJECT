@@ -82,6 +82,9 @@ header {
   height: 100%;
 }
 
+
+/* ANIMATION OVERLAY LEFT TO RIGHT*/
+
 .main .container .overlay {
   min-width: 0%;
 }
@@ -103,10 +106,6 @@ header {
   min-width: 0%;
 }
 
-.overlayMask {
-  min-width: 0%;
-}
-
 .container:hover .overlay {
   width: 100%;
 }
@@ -120,12 +119,25 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  width: 200px;
+  width: 12.5em;
+}
+
+.text h2 {
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
 }
 
 .text p {
-  font-size: 0.8em;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+  margin: 0.2em;
 }
+/* END OF ANIMATION OVERLAY LEFT TO RIGHT*/
+
+
 
 /*THE MAIN SECTIONS ENDS HERE*/
 
@@ -208,6 +220,9 @@ h2 {
 @media screen and (max-width: 1200px) {
   .main div {
     min-width: 33%;
+  }
+  .text {
+    width: 12.5em;
   }
 }
 
