@@ -27,19 +27,16 @@ header {
 .logo {
   height: 2em;
   margin: 1.5em;
-  /*float: left;*/
 }
 
 .tagline {
   display: block;
-  /*float: left;*/
   font-weight: 300;
   font-size: 1.2em;
   margin-top: 1.5em;
 }
 
 .primary_nav{
-  /*float: left;*/
   margin-top: 1em;
   width: 75%;
   text-align: right;
@@ -351,6 +348,12 @@ h2 {
   }
 }
 
+@media screen and (max-width: 685px) {
+  .tagline {
+    width: 6em;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .main div {
     min-width: 100%;
@@ -358,5 +361,8 @@ h2 {
   .text h2 p {
     font-size: 1em;
     margin-left: 2em;
+  }
+  .tagline {
+    display: none;
   }
 }
