@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script src="main.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     <nav class="primary_nav">
       <ul>
         <li><a href="about.html">About me</a></li>
-        <li><a href="about.html" class="button">Get in touch</a></li>
+        <li><button id="myBtn">Get in touch</button></li>
       </ul>
     </nav>
 
@@ -179,6 +179,32 @@
     </div>
 
   </section>
+
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form action="">
+
+      <h2>Please get in touch, I would love to hear from you!</h2>
+
+      <label for="name">Your name</label> <br>
+      <input type="text" id="name" name="name" placeholder="What's your name?"><br>
+
+      <label for="company">Company</label><br>
+      <input type="text" id="lname" name="company" placeholder="Who do you work for?"><br>
+
+      <label for="subject">Subject</label>
+      <textarea name="message" rows="8" cols="80"placeholder="Your message for me"></textarea>
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
 
 </div>
 
