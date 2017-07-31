@@ -24,9 +24,8 @@ $(document).ready(function() {
           modal.style.display = "none";
       }
   }
-})
+});
 
-$(document).ready(function() {
   $("button.left").click(function() {
     $("#image-container img").eq(0).addClass("img-moved-left");
     $("#image-container img").eq(1).addClass("img-moved-left");
@@ -34,4 +33,13 @@ $(document).ready(function() {
     $("#image-container img").eq(3).addClass("img-moved-left");
     $("#image-container img").eq(4).addClass("img-moved-left");
   });
-})
+});
+
+  $("button.right").click(function() {
+    $("#image-container img").eq(0).addClass("img-moved-right");
+    $("#image-container img").eq(1).addClass("img-moved-right");
+    $("#image-container img").eq(2).addClass("img-moved-right");
+    $("#image-container img").eq(3).addClass("img-moved-right");
+    $("#image-container img").eq(4).addClass("img-moved-right");
+  });
+});

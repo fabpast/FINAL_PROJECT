@@ -445,14 +445,27 @@ SLIDESHOW SATYLE STARTING HERE
      width: 700px;
      transition: all 1s ease;
 }
-.img-moved-left{
-     margin-left:-700px;
+
+.img-moved-left {
+     margin-left: -700px;
+}
+
+.img-moved-right{
+     margin-left: 700px;
 }
 
 .left {
   height: 30px;
-  justify-content: flex-end;
+  /*justify-content: flex-end;*/
   position: absolute;
   z-index: 1;
+  margin-left: 675px;
+  margin-top: 255px;
+}
 
+.right {
+  height: 30px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 255px;
 }
