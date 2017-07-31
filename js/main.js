@@ -25,3 +25,13 @@ $(document).ready(function() {
       }
   }
 })
+
+$(document).ready(function() {
+  $("button.left").click(function() {
+    $("#image-container img").eq(0).addClass("img-moved-left");
+    $("#image-container img").eq(1).addClass("img-moved-left");
+    $("#image-container img").eq(2).addClass("img-moved-left");
+    $("#image-container img").eq(3).addClass("img-moved-left");
+    $("#image-container img").eq(4).addClass("img-moved-left");
+  });
+})

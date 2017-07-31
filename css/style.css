@@ -288,6 +288,14 @@ footer span {
   padding: 0 130px;
 }
 
+/********************
+ABOUT PAGE
+********************/
+p {
+  margin: 2em 0 4em 0;
+  line-height: 1.5;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], textarea {
     padding: 12px; /* Some padding */
@@ -378,9 +386,6 @@ h2 {
 
 
 
-
-
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -417,4 +422,37 @@ h2 {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/*****************************
+SLIDESHOW SATYLE STARTING HERE
+*****************************/
+
+#image-container-wrapper{
+    width: 700px;
+    height:554px;
+    overflow: hidden;
+    border: 1px solid lightgrey;
+}
+
+#image-container{
+     width:5600px;
+     display: flex;
+}
+
+#image-container img{
+     margin-left:0;
+     width: 700px;
+     transition: all 1s ease;
+}
+.img-moved-left{
+     margin-left:-700px;
+}
+
+.left {
+  height: 30px;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 1;
+
 }
