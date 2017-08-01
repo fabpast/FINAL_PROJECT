@@ -341,10 +341,10 @@ h2 {
   font-weight: 400;
 }
 
-#about_main ul {
+/*#about_main ul {
   padding: 0;
   margin: 0;
-}
+}*/
 
 @media screen and (max-width: 1200px) {
   .main div {
@@ -427,33 +427,34 @@ h2 {
 }
 
 /*****************************
-SLIDESHOW SATYLE STARTING HERE
+SLIDESHOW STYLE STARTING HERE
 *****************************/
 
 #image-container-wrapper{
     width: 700px;
-    height:554px;
+    height:520px;
     overflow: hidden;
     border: 1px solid lightgrey;
 }
 
-#image-container{
+.images {
      width:5600px;
+     height: 520px;
      display: flex;
 }
 
-#image-container img{
+.images img {
      margin-left:0;
      width: 700px;
      transition: all 1s ease;
 }
 
-.img-moved-left {
+img.img-moved-left {
      margin-left: -700px;
 }
 
 .img-moved-right{
-     margin-left: 700px;
+     margin-left: 0px;
 }
 
 .left {

@@ -1,3 +1,5 @@
+var slide = 0;
+
 $(document).ready(function() {
   // Get the modal
   var modal = document.getElementById('myModal');
@@ -28,19 +30,21 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $("button.left").click(function() {
-    $("#image-container img").eq(0).addClass("img-moved-left");
-    $("#image-container img").eq(1).addClass("img-moved-left");
-    $("#image-container img").eq(2).addClass("img-moved-left");
-    $("#image-container img").eq(3).addClass("img-moved-left");
-    $("#image-container img").eq(4).addClass("img-moved-left");
+    $("#image-container img").eq(slide).addClass("img-moved-left");
+    slide = slide + 1;
+    if (slide === 7) {
+      slide = 0
+      $("#image-container img").removeClass("img-moved-left");
+    }
   });
 });
-//
+
+// $(document).ready(function() {
 //   $("button.right").click(function() {
-//     $("#image-container img").eq(0).addClass("img-moved-right");
-//     $("#image-container img").eq(1).addClass("img-moved-right");
-//     $("#image-container img").eq(2).addClass("img-moved-right");
-//     $("#image-container img").eq(3).addClass("img-moved-right");
-//     $("#image-container img").eq(4).addClass("img-moved-right");
-//   });
+//       $("#image-container img").eq(slide).addClass("img-moved-right");
+//       if (slide === 0) {
+//         slide = 7
+//         $("#image-container img").eq(slide).addClass("img-moved-right");
+//     });
 // });
+// }
