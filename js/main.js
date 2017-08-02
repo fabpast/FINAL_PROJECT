@@ -39,12 +39,15 @@ $(document).ready(function() {
   });
 });
 
-// $(document).ready(function() {
-//   $("button.right").click(function() {
-//       $("#image-container img").eq(slide).addClass("img-moved-right");
-//       if (slide === 0) {
-//         slide = 7
-//         $("#image-container img").eq(slide).addClass("img-moved-right");
-//     });
-// });
-// }
+$(document).ready(function() {
+  $("button.right").click(function() {
+      // $("#image-container img").eq(slide).addClass("img-moved-left");
+      slide = slide - 1;
+      $("#image-container img").eq(slide).removeClass("img-moved-left");
+      if (slide <= 0) {
+        slide = 6
+        $("#image-container img").addClass("img-moved-left");
+        $("#image-container img").eq(slide).removeClass("img-moved-left");
+      }
+  });
+});
