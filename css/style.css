@@ -464,17 +464,25 @@ img.img-moved-left {
 }
 
 .left {
-  height: 30px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  opacity: 0.4;
+  border: 0px;
   /*justify-content: flex-end;*/
   position: absolute;
   z-index: 1;
-  margin-left: 675px;
+  margin-left: 635px;
   margin-top: 255px;
 }
 
 .right {
-  height: 30px;
-  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  opacity: 0.4;
+  border: 0px;  position: absolute;
   z-index: 1;
   margin-top: 255px;
+  margin-left: 20px;
 }
